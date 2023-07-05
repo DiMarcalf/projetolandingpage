@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+/*divs gerais*/
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    background-color: #cfd2cd;
+    padding: 10px 2% 10px 2%;
+}
+
+.logo1{
+    float: left;
+    width: 180px;
+    height: 70px;
+    margin: 15px auto;
+    background-image: url(../imagens/logo1.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+
+}
+
+.logo2{
+    float: right;
+    width: 160px;
+    height: 70px;
+    margin: 15px auto;
+    background-image: url(../imagens/logo2.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+
+section.cover-form{
+   width: 100%;
+}
+
+.bg{
+    position: relative;
+    height: 550px;
+    background-image: url(../imagens/bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.form-container{
+    position: absolute;
+    right: 25px;
+    bottom: -27px;
+    width: 400px;
+    height: 110%;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 16px -16px 0px -12px rgba(33,37,41,1);
+    -moz-box-shadow: 16px -16px 0px -12px rgba(33,37,41,1);
+    box-shadow: 16px -16px 0px -12px rgba(33,37,41,1);
+}
+
+.form-container h2{
+    font-weight: normal;
+    background-color: rgb(234, 236, 239);
+    padding: 20px 15px;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
+
+.form-container form{
+    padding: 20px;
+    margin-top: 8px;
+}
+
+.form-container form p{
+    font-size: 15px;
+    color: #525252;
+}
+
+.form-wraper:not(:first-child){
+    margin-top: 40px;
+}
+
+.form-wraper:last-child{
+    margin-top: 20px;
+}
+
+.form-container form input[type="text"]{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+}
+
+.form-container form input[type="submit"]{
+    background-color: #033c50;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    border: 0;
+    font-size: 25px;
+    height: 50px;
+}
+
+section.chamada{
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+}
+
+section.chamada .container{
+    background-color: #a6a2a2;
+    padding: 70px 0 50px 0;
+}
+
+section.chamada h2{
+    width: 98%;
+    max-width: 700px;
+    display: inline-block;
+    color: #4a5759;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+section.chamada p{
+    width: 98%;
+    max-width: 700px;
+    display: inline-block;
+    color: #454d4f;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.flex-mosaico{
+    display: flex;
+}
+
+.item1-mosaico{
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+}
+
+.item2-mosaico{
+    background-color: #847577;
+    padding: 70px;
+    width: 40%;
+}
+
+.item2-mosaico p{
+    font-weight: bold;
+    text-align: justify;
+    color: #ffff;
+    font-size: 25px;
+}
+
+footer{
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #3d3b3b;
+}
+
+@media screen and (max-width:940px) {
+
+    .flex-mosaico{
+        display: block;
+    }
+
+    .item1-mosaico{
+        width: 100%;
+        padding-top: 80%;
+    }
+
+    .item2-mosaico{
+        font-weight: bold;
+        text-align: justify;
+        width: 100%;
+    }
+} 
+
+@media screen and (max-width: 960px) {
+
+    .bg{
+        text-align: center;
+    }
+
+    .form-container{
+        margin-top:  -15px;
+        height:105%;
+        width: 96%;
+        max-width: 400px;
+        position: static;
+        display: inline-block;
+        box-shadow: none;
+        text-align: justify;
+    }
+
+    .form-container h2{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 516px) {
+
+    header{
+        text-align: center;
+    }
+
+    /*.logo1, .logo2{
+        margin-top: 10px;
+        display: inline-block;
+        float: none;
+    }*/
+
+    [class^="logo"] {/*TUDO QUE TIVER O NOME LOGO POSSO USAR ESSE ATRIBUTO*/
+        margin-top: 10px;
+        display: inline-block;
+        float: none;
+    }
+
+ 
